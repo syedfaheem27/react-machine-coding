@@ -1,0 +1,33 @@
+.container {
+  min-height: 670px;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.traffic-outline {
+  height: 400px;
+  width: 150px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.light {
+  width: 60px;
+  height: 60px;
+  background-color: gray;
+  border-radius: 100%;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
