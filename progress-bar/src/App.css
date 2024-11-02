@@ -1,0 +1,35 @@
+.progress-container {
+  min-height: 367px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 1em;
+  /* overflow: hidden; */
+  padding: 1em;
+}
+.progress-bar {
+  height: 36px;
+  border-radius: 100px;
+  position: relative;
+  background-color: rgba(128, 128, 128, 0.245);
+}
+.progress-bar > span:first-child {
+  display: inline-block;
+  background-color: aqua;
+  height: 100%;
+  border-radius: 100px;
+  border: none;
+  transition: width 700ms linear;
+}
+.progress-bar > span:last-child {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.progress-container > div:last-child {
+  align-self: center;
+  display: flex;
+  gap: 1em;
+}
