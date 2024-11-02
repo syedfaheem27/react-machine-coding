@@ -1,0 +1,37 @@
+.board {
+  /* border: 1px solid black; */
+}
+.board > div {
+  width: 40%;
+  margin: 0 auto;
+  min-height: 60px;
+  display: flex;
+}
+.board span {
+  border: 1px solid gray;
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+}
+.board span:hover {
+  background-color: rgba(119, 136, 153, 0.302);
+}
+.board span.active::after {
+  content: "🐹";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.board span.active:active::before {
+  content: "❎";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  font-weight: bold;
+  font-size: 2rem;
+  z-index: 100;
+}
